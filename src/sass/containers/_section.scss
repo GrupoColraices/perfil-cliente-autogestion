@@ -1,0 +1,134 @@
+section.container__section {
+    display: grid;
+    padding: 8px 28px 10px;
+    /* Cambio de .8rem a 8px, 2.8rem a 28px y 1rem a 10px */
+    background-color: $gray;
+    box-shadow: 5px 5px 10px #00000029;
+    border-radius: 5px;
+    /* Cambio de 0.5rem a 5px */
+    border: 1px solid $yellow;
+
+    h3 {
+        width: 100%;
+        grid-column: 1 / span 3;
+        font-size: 18px;
+        /* Cambio de 1.8rem a 18px */
+        color: $blue;
+        text-decoration: underline 2.4px $yellow;
+        /* Cambio de 0.24rem a 2.4px */
+
+    }
+
+    h3.title__reference {
+        font-size: 19px;
+        /* Cambio de 1.9rem a 19px */
+        padding: 15px 0 0 0;
+        /* Cambio de 1.5rem a 15px */
+        margin: 10px 0 10px 0;
+        /* Cambio de 1rem a 10px */
+        text-decoration: none;
+
+        span {
+            color: $yellow;
+        }
+    }
+
+    .add__button {
+        margin: 15px 42px 20px auto;
+        /* Cambio de 1.5rem a 15px, 4.2rem a 42px, y 2rem a 20px */
+    }
+}
+
+div.employment__data-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    /* Cambio de 1.8rem a 18px */
+    margin-top: 20px;
+    /* Cambio de 2rem a 20px */
+
+    .remove__button {
+        width: 150px;
+        /* Cambio de 15rem a 150px */
+        margin: 22px auto 0 auto;
+        /* Cambio de 2.2rem a 22px */
+        text-align: center;
+    }
+
+    .custom__remove-button {
+        grid-column: 3/3;
+    }
+}
+
+section.information {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    /* Cambio de 4rem a 40px */
+}
+
+section.personal__data,
+.aplication__information,
+.economic__information,
+.expends {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    /* Cambio de 1.8rem a 18px */
+}
+
+section.economic__information {
+    padding-top: 15px;
+    /* Cambio de 1.5rem a 15px */
+}
+
+section.expends {
+    margin-top: 40px;
+    /* Cambio de 4rem a 40px */
+
+    .custom__structure {
+        grid-column: 1/1;
+    }
+
+    .add__button,
+    .remove__button {
+        grid-column: 3/3;
+        margin: 25px auto 0;
+        /* Cambio de 2.5rem a 25px */
+    }
+
+    .position__remove {
+        margin: -10px auto 0;
+        /* Cambio de -1rem a -10px */
+    }
+}
+
+section.references {
+    div.agent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 18px;
+    }
+
+    div {
+        div.reference {
+            display: grid;
+            column-gap: 18px;
+            grid-template-columns: repeat(3, 1fr);
+
+            .remove__button {
+                grid-column: 2/2;
+                margin: 25px auto 0;
+            }
+
+        }
+
+        .add__button {
+            margin: 20px 0;
+
+            button {
+                margin: 0 auto;
+            }
+
+        }
+    }
+
+}

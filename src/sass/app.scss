@@ -1,0 +1,22 @@
+// Globals
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globals';
+
+// Components
+@import 'components/header';
+@import 'components/title';
+@import 'components/input';
+@import 'components/bankButton';
+@import 'components/loader';
+
+// Containers
+@import 'containers/section';
+@import 'containers/details';
+@import 'containers/result';
+@import 'containers/form';

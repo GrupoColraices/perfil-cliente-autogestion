@@ -1,0 +1,95 @@
+section.form-section {
+    position: relative;
+    background-color: $white-alt;
+    border-radius: 0 0 1.2rem 1.2rem;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 2rem;
+    padding-bottom: 3rem;
+  
+    form {
+      width: 100%;
+      padding: 3rem 1.4rem;
+  
+      fieldset {
+        border: none;
+        margin: 1rem 0;
+  
+        legend {
+          color: $secondary;
+          font-weight: bold;
+          margin: 1rem 0;
+  
+          span {
+            color: $secondary;
+          }
+        }
+  
+        @include desktop {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 2rem;
+        }
+      }
+  
+      animation: fadeIn;
+      animation-duration: 2.5s;
+  
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+  
+        to {
+          opacity: 1;
+        }
+      }
+  
+      button.result {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0.6rem 3.6rem;
+        color: $secondary;
+        font-weight: 600;
+        font-size: 1.5rem;
+        font-family: $font;
+        background-color: $white;
+        border-radius: 0.8rem;
+        border: solid 1px $secondary;
+        max-width: 200px;
+        width: 100%;
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  
+        &:disabled {
+          opacity: 0.5;
+        }
+  
+        &:hover {
+          color: $white;
+          background: #c8c9d4;
+          border: solid 1px $white;
+        }
+      }
+    }
+  
+    @include desktop {
+      border-radius: 1.2rem;
+  
+      form {
+        padding: 5rem 5rem 0 5rem;
+  
+        legend {
+          font-size: 1.2rem;
+        }
+  
+        button.result {
+          margin: 3rem auto 2rem;
+        }
+        
+        input {
+          padding: 10px;
+        }
+        
+      }
+    }
+  }

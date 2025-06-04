@@ -1,0 +1,56 @@
+h2.title {
+    position: relative;
+    font-size: 18px;
+    /* 1.8rem * 10 = 18px */
+    font-weight: 600;
+    text-align: center;
+    color: $blue;
+    /* No se especifica el valor, mantenerlo igual */
+    max-width: 250px;
+    /* 25rem * 10 = 250px */
+    margin: 22px auto;
+    /* 2.2rem * 10 = 22px */
+}
+
+h2.information {
+    margin-top: 0;
+    /* No se especifica el valor, mantenerlo igual */
+}
+
+.title__large {
+    max-width: 350px !important;
+    /* 35rem * 10 = 350px */
+}
+
+h2.title:before {
+    content: '';
+    display: block;
+    width: 30px;
+    /* No se especifica el valor, mantenerlo igual */
+    height: 0.1px;
+    /* 0.1rem * 10 = 1px */
+    background: $yellow;
+    /* No se especifica el valor, mantenerlo igual */
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+h2.title:after {
+    content: '';
+    display: block;
+    width: 30px;
+    /* No se especifica el valor, mantenerlo igual */
+    height: 0.1px;
+    /* 0.1rem * 10 = 1px */
+    background: $yellow;
+    /* No se especifica el valor, mantenerlo igual */
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+#tippy_title {
+    top: 3px;
+    cursor: pointer;
+}

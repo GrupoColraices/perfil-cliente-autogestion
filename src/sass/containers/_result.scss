@@ -1,0 +1,96 @@
+.section__result {
+    position: relative;
+    text-align: center;
+    padding: 40px; /* 4rem convertido a px */
+    margin-bottom: 30px; /* 3rem convertido a px */
+    background-color: $gray;
+    border: 1px solid $yellow;
+    border-radius: 5px; /* 0.5rem convertido a px */
+    box-shadow: 40px 40px 70px 20px rgb(0 0 0 / 10%); /* Los valores de box-shadow no se pueden convertir directamente a px, se mantienen igual */
+
+    .section__buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 30px; /* 3rem convertido a px */
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 30px 30px 80px rgba(0, 0, 0, 0.2); /* Los valores de text-shadow no se pueden convertir directamente a px, se mantienen igual */
+        margin: 50px 0 20px 0; /* 5rem convertido a px */
+        font-weight: 600;
+    }
+
+    .inputs {
+        label{
+            font-size: 14px; /* 1.4rem convertido a px */
+        }
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px; /* 1.6rem convertido a px */
+        text-align: start;
+        margin: 30px 0 10px 0; /* 3rem convertido a px */
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .button {
+        display: inline-block;
+        height: 40px; /* 4rem convertido a px */
+        width: 190px; /* 21rem convertido a px */
+        font-size: 15px; /* 1.6rem convertido a px */
+        font-weight: 400;
+        padding: 8px 10px; /* 0.8rem convertido a px y 1rem convertido a px */
+        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(42, 63, 117, 1) 100%);
+        margin: 0;
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $yellow;
+        border-radius: 8px;
+        text-align: center;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &.small {
+            width: 190px;
+            font-size: 15px;
+        }
+    }
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+
+    button {
+        font-family: $font;
+        height: 40px; /* 4rem convertido a px */
+        width: 200px; /* 20rem convertido a px */
+        font-size: 24px; /* 2.4rem convertido a px */
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(42, 63, 117, 1) 100%);
+        margin: 70px 0;
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $yellow;
+        border-radius: 5px;
+        opacity: 0.9;
+        transition: 0.3s;
+
+        &:disabled {
+            opacity: 0.5;
+        }
+
+        &:hover {
+            background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(42, 63, 117, 1) 100%);
+        }
+    }
+}

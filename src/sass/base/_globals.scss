@@ -1,0 +1,98 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*::selection {
+    background-color: $blue; /* No changes to pixel values */
+    color: $white; /* No changes to pixel values */
+}
+
+body {
+    font-family: $font;
+    font-size: 16px; /* 1.6rem converted to 16px */
+    margin: 0;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+}
+
+p {
+    font-size: 20px; /* 2rem converted to 20px */
+    color: $black; /* No changes to pixel values */
+}
+
+.container {
+    max-width: 980px; /* 98rem converted to 980px */
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: $yellow; /* No changes to pixel values */
+}
+
+h1 {
+    font-size: 38px; /* 3.8rem converted to 38px */
+}
+
+h2 {
+    font-size: 35px; /* 3.5rem converted to 35px */
+}
+
+h3 {
+    font-size: 30px; /* 3rem converted to 30px */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(42 63 119);
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(42, 63, 119, 0.774);
+    }
+}
