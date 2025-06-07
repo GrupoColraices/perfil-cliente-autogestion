@@ -163,32 +163,6 @@ export const Result = ({
                     </div>
                 </div>
                 <Details />
-                <div className="button-group">
-                    {!withoutLetterPdf && (
-                        <Link
-                            to={`/clientes/historial/${clientID}`}
-                            className={`button ${idDealHubspot ? 'small' : ''}`}
-                        >
-                            Generar carta PDF
-                        </Link>
-                    )}
-                    {}
-                    {idDealHubspot && (
-                        <button
-                            className={`button small ${profileAlreadySent ? 'pointer-events-none opacity-60' : ''}`}
-                            onClick={handleSendProfile}
-                            disabled={!!profileAlreadySent}
-                        >
-                            Enviar perfil a HubSpot
-                        </button>
-                    )}
-                    <Link
-                        to="/"
-                        className={`button ${idDealHubspot ? 'small' : ''}`} // Clase condicional
-                    >
-                        Regresar
-                    </Link>
-                </div>
             </section>
         </>
     )
