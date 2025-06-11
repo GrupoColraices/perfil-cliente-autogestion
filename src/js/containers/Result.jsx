@@ -91,20 +91,20 @@ export const Result = ({
             <section className="section__result" id="result">
                 <div className="section__buttons">
                     <BankButton
-                        img="/assets/icons/bancolombia_color.svg"
-                        hover="/assets/icons/bancolombia_white.svg"
+                        img="/perfil-cliente/assets/icons/bancolombia_color.svg"
+                        hover="/perfil-cliente/assets/icons/bancolombia_white.svg"
                         active={selectedBank === 'Bancolombia' ? 'active' : ''}
                         action={creditBancolombia}
                     ></BankButton>
                     <BankButton
-                        img="/assets/icons/banco_union_color.svg"
-                        hover="/assets/icons/banco_union_white.svg"
+                        img="/perfil-cliente/assets/icons/banco_union_color.svg"
+                        hover="/perfil-cliente/assets/icons/banco_union_white.svg"
                         active={selectedBank === 'Banco Union' ? 'active' : ''}
                         action={creditBancoUnion}
                     ></BankButton>
                     <BankButton
-                        img="/assets/icons/davivienda_color.svg"
-                        hover="/assets/icons/davivienda_white.svg"
+                        img="/perfil-cliente/assets/icons/davivienda_color.svg"
+                        hover="/perfil-cliente/assets/icons/davivienda_white.svg"
                         active={selectedBank === 'Davivienda' ? 'active' : ''}
                         action={creditDavivienda}
                     ></BankButton>

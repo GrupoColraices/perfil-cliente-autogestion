@@ -10,7 +10,7 @@ export const AppRouter = () => {
             <BrowserRouter>
                 <Routes>
                     <Route
-                        path="/"
+                        path="/perfil-cliente"
                         element={
                             <ProfileProvider>
                                 <ProfileClient />
