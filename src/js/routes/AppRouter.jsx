@@ -18,7 +18,7 @@ export const AppRouter = () => {
                         }
                     />
 
-                    <Route path="*" element={<NotFound />} />
+                    {/* <Route path="*" element={<NotFound />} /> */}
                 </Routes>
             </BrowserRouter>
         </AppContextProvider>
