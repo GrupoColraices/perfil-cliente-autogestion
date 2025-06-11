@@ -289,29 +289,7 @@ export const Form = () => {
               </span>
             )}
           </fieldset>
-          {isSubmitted && (
-            <div className="fixed right-8 bottom-8 z-10">
-              <Link
-                className="w-20 h-20 rounded-full bg-gradient-to-r from-azure-600 to-azure-700 hover:from-azure-600 hover:to-azure-700 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 border-4 border-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-azure-600 cursor-pointer"
-                to={`/clientes/${client.id}/editar`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                  />
-                </svg>
-              </Link>
-            </div>
-          )}
+        
         </form>
       )}
       {result ? (

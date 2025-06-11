@@ -336,7 +336,7 @@ export const RequestData = ({
                                 name: 'Property.parquing',
                                 label: 'Parqueadero',
                                 register,
-                                validate: (value) => value !== '',
+                                // validate: (value) => value !== '',
                                 opts: [
                                     { id: true, name: 'Si' },
                                     { id: false, name: 'No' },
