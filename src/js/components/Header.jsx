@@ -4,7 +4,7 @@ export const Header = ({ title = "Perfil del cliente" }) => {
       <div className="w-full ">
         <img
           className="mx-auto w-80 rounded-b-2xl p-4 shadow-[14px_16px_16px_-9px_#0000001a,inset_15px_-15px_18px_-10px_#0000001a]"
-          src="/assets/colraices_logo.svg"
+          src="/perfil-cliente/assets/colraices_logo.svg"
           alt="Logo Colraices"
         />
       </div>

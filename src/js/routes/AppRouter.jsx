@@ -10,7 +10,7 @@ export const AppRouter = () => {
             <BrowserRouter>
                 <Routes>
                     <Route
-                        path="/"
+                        path="/perfil-cliente"
                         element={
                             <ProfileProvider>
                                 <ProfileClient />
@@ -18,7 +18,7 @@ export const AppRouter = () => {
                         }
                     />
 
-                    <Route path="*" element={<NotFound />} />
+                    {/* <Route path="*" element={<NotFound />} /> */}
                 </Routes>
             </BrowserRouter>
         </AppContextProvider>
