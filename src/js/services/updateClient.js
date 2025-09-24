@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 const { VITE_API_URL } = import.meta.env;
 
 export const updateClient = async (data, client_id, updateProfiles, setResult) => {
+    const { created_at, ...dataToSend } = data;
     
     try {
         const response = await fetch(`${VITE_API_URL}/clients/${client_id}`, {
@@ -10,7 +11,7 @@ export const updateClient = async (data, client_id, updateProfiles, setResult) =
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data),
+            body: JSON.stringify(dataToSend),
         });
 
         if (!response.ok) {
@@ -44,7 +45,7 @@ export const updateClient = async (data, client_id, updateProfiles, setResult) =
         return success?.data; 
 
     } catch (error) {
-
+        console.error('❌ Error en updateClient:', error); 
         throw error;
     }
 };
