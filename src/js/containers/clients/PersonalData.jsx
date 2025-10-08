@@ -216,7 +216,7 @@ export const PersonalData = ({ options: { register, watch, errors, readOnly = fa
                     name: 'marital_status_id',
                     label: 'Estado civil',
                     register,
-                    opts: stateMarital,
+                    opts: stateMarital?.slice(0, 5),
                     isIdValue: true,
                     disabled: readOnly
                 }}
